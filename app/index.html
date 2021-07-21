@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Тестовое задание</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>  
+    <!-- Header Start -->
+    <header class="site-header">
+      <div class="wrapper site-header__wrapper">
+        <div class="site-header__start">
+		      <a class="site-header__logo" href="#" ><img src="images/logo.svg" alt="" class="header__logo-img" width="93" height="42"></a>
+          <nav class="nav">
+            <a class="nav__toggle" aria-expanded="false">
+              КАТАЛОГ
+            </a>
+            <ul class="nav__wrapper">
+              <li class="nav__item"><a href="#">Home</a></li>
+              <li class="nav__item"><a href="#">About</a></li>
+              <li class="nav__item"><a href="#">Services</a></li>
+              <li class="nav__item"><a href="#">Hire us</a></li>
+              <li class="nav__item"><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="search">
+            <button class="search__toggle" aria-label="Open search">
+              Искать ...
+            </button>
+            <form class="search__form" action="">
+              <label class="sr-only" for="search">Искать</label>
+              <input type="search" name="" id="search"placeholder="Искать ..."/>
+            </form>
+          </div>
+        </div>
+        <div class="site-header__end">
+          <ul class="sub-nav">
+            <li class=""><a href="#"><img src="images/cart.svg" alt="" class="header__cart-btn"></a></li>
+            <li class=""><a href="#"><img src="images/profile.svg" alt="" class="header__profile-btn"></a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- Header End -->
+    <!-- Section Start -->
+    <section class="content">
+      <div class="content__wrapper">
+        <div class="content__table">
+          <div class="content__table-head">
+              <div class="content__table-head-item">ID Продукта</div>
+              <div class="content__table-head-item">Статус продукта</div>
+              <div class="content__table-head-item">Общее количество</div>
+          </div>
+          <div class="content__table-body">
+            <div class="content__table-item">ID Продукта</div>
+            <div class="content__table-item">ID Продукта</div>
+            <div class="content__table-item">ID Продукта</div>
+            <div class="content__table-item-id">1</div>
+          </div>
+        </div>
+      </div>
+      <div class="button__load" data-page="0">Обновить список</div>
+    </section>
+     <!-- Section End -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/libs.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
