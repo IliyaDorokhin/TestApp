@@ -38,7 +38,7 @@ async function postData(url = '', data = {}) {
 }
 const button = document.querySelector('.button__load');
 button.addEventListener('click', event => {
-    postData('server_test.php', { page: button.getAttribute('data-page') })
+    postData('server.test.php', { page: button.getAttribute('data-page') })
         .then((data) => {
             let pageNum = parseInt(button.getAttribute('data-page'))
             updateTable(data, pageNum)
