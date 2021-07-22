@@ -1,7 +1,7 @@
 function updateTable(json, pageNum = 0) {
     let divTable = document.getElementsByClassName("content__table")[0];
     if (pageNum%3 == 0){
-        divTable.querySelectorAll('.content__table-body')
+        divTable.querySelectorAll('.content__table-row')
             .forEach(node => node.remove());
     }
     json.forEach((row, rowIndex) => {
@@ -11,7 +11,7 @@ function updateTable(json, pageNum = 0) {
 
 function addNewRow(divTable, row, rowIndex, pageNum) {
     let divRow = document.createElement('div');
-    divRow.classList.add('content__table-body');
+    divRow.classList.add('content__table-row');
     for (var fieldName in row) {
         let newDiv = document.createElement("div");
         newDiv.innerHTML = row[fieldName];
