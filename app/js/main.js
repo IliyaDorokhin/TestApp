@@ -45,8 +45,10 @@ button.addEventListener('click', event => {
             button.setAttribute('data-page', pageNum+1)
         });
 });
-/*
+
 document.addEventListener("DOMContentLoaded", (event)=> {
     document.querySelector('.button__load').click();
+    document.querySelector('.nav__toggle').addEventListener('click', ()=> {
+        document.querySelector('.nav__list').classList.toggle("active");
+    })
 });
-*/
